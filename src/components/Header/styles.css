@@ -1,0 +1,25 @@
+.header {
+    display: flex;
+    background-color: #ffffff;
+    justify-content: center;
+}
+
+.logo {
+    display: flex;
+    gap: 10px;
+    font-size: 30px;
+}
+
+.options {
+    display: flex;
+    gap: 50px;
+}
+
+.option {
+    display: flex;
+    align-items: center;
+    padding: 0 5px;
+    cursor: pointer;
+    text-transform: uppercase;
+    font-weight: 500;
+}
