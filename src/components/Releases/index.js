@@ -1,7 +1,8 @@
 import { books } from './releaseData.js';
 import styled from 'styled-components';
 import { Title } from '../Title/index.js';
-import RecommendationCard from '../RecommendationCard/index.js';
+import Card from '../Card/index.js';
+import bookImg from '../../images/livro2.png';
 
 const ReleasesContainer = styled.section`
     text-align: center;
@@ -28,10 +29,12 @@ function Releases() {
                     </div>
                 ))}
             </NewBooksContainer>
-            <RecommendationCard 
+            <Card 
                 title='Talvez você se interesse por...'
                 subtitle='Angular 11'
-                description=''
+                description='Construindo uma aplicação com a plataforma google'
+                src={bookImg}
+                alt= 'Livro Recomendado'
             />
         </ReleasesContainer>
     );
