@@ -10,7 +10,7 @@ const ReleasesContainer = styled.section`
 `
 
 const NewBooksContainer = styled.div`
-    margin-top: 30px;
+    margin: 30px 0;
     display: flex;
     gap: 50px;
     justify-content: center;
