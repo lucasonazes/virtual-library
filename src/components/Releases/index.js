@@ -7,6 +7,7 @@ import bookImg from '../../images/livro2.png';
 const ReleasesContainer = styled.section`
     text-align: center;
     background-color:rgb(240, 240, 240);
+    padding-bottom: 50px;
 `
 
 const NewBooksContainer = styled.div`

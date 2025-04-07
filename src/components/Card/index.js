@@ -44,7 +44,7 @@ function Card({title, subtitle, description, src, alt}) {
     return (
         <CardContainer>
             <div>
-                <Title fontSize='16px' textAlign='left'>{title}</Title>
+                <Title fontSize='16px'>{title}</Title>
                 <Subtitle>{subtitle}</Subtitle>
                 <Description>{description}</Description>
             </div>

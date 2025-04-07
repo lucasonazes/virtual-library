@@ -3,8 +3,9 @@ import logo from '../../images/logo.svg';
 import profile from '../../images/perfil.svg';
 import bag from '../../images/sacola.svg';
 import styled from 'styled-components';
+import { Link } from 'react-router-dom';
 
-const textOptions = [{id: 1, description: 'Categorias'}, {id: 2, description: 'Minha estante'}, {id: 3, description:'Favoritos'}];
+const textOptions = [{id: 1, description: 'Categorias', route: '/categories'}, {id: 2, description: 'Minha estante', route: '/my-bookshelf'}, {id: 3, description:'Favoritos', route: '/favorites'}];
 const icons = [{id: 1, src: profile, alt: 'Perfil'}, { id: 2, src: bag, alt: 'Sacola'}];
 
 const Icon = styled.li`
@@ -20,14 +21,16 @@ const Icons = styled.ul`
 function Header() {
     return (
         <header className='header'>
-            <div className='logo'>
-                <img src={logo} alt='Logo'></img>
-                <p><strong>Alura</strong>Books</p>
-            </div>
+            <Link to='/' className='logoLink'>
+                <div className='logo'>
+                    <img src={logo} alt='Logo'></img>
+                    <p><strong>Alura</strong>Books</p>
+                </div>
+            </Link>
 
             <ul className='options'>
                 { textOptions.map(text => (
-                    <li className='option' key={text.id}><p>{text.description}</p></li>
+                    <Link to={text.route} className='optionLink' key={text.id}><li className='option'><p>{text.description}</p></li></Link>
                 )) }
             </ul>
 

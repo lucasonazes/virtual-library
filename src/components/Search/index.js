@@ -1,7 +1,7 @@
 import Input from '../Input';
 import styled from 'styled-components';
-import { useState } from 'react';
-import { books } from './searchData.js';
+import { useState, useEffect } from 'react';
+import { getBooks } from '../../services/books';
 
 const SearchContainer = styled.section`
     background-image: linear-gradient(90deg, #002F52 35%, #326589 165%);
@@ -25,6 +25,16 @@ const Subtitle = styled.h3`
 
 function Search() {
     const [searchedBooks, setSearchedBooks] = useState([]);
+    const [ books, setBooks ] = useState([]);
+
+    useEffect(() => {
+        fetchBooks();
+    }, [])
+
+    async function fetchBooks() {
+        const apiBooks = await getBooks();
+        setBooks(apiBooks);
+    }
 
     return (
         <SearchContainer>

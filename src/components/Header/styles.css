@@ -4,6 +4,11 @@
     justify-content: center;
 }
 
+.logoLink {
+    text-decoration: none;
+    color: #000000;
+}
+
 .logo {
     display: flex;
     gap: 10px;
@@ -22,4 +27,11 @@
     cursor: pointer;
     text-transform: uppercase;
     font-weight: 500;
+}
+
+.optionLink {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: #000000;
 }
