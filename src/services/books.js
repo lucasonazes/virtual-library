@@ -9,7 +9,7 @@ async function getBooks() {
         return response.data;
     } catch (error) {
         console.error('Erro ao buscar livros na API: ', error);
-        alert('Erro ao buscar livros na API');
+        throw error;
     }
 }
 
