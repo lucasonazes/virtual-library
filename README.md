@@ -47,25 +47,16 @@ src/
 
 ## ⚡ Getting Started
 
-### Installation
+### Install dependencies
 
-1. Clone the repository:
-   ```sh
-   git clone https://github.com/your-username/alura-books.git
-   cd alura-books
-   ```
+1. Clone the repository.
+2. Run `npm install` to install dependencies.
 
-2. Install dependencies:
-   ```sh
-   npm install
-   ```
+### Running the Server
 
-3. Start the development server:
-   ```sh
-   npm start
-   ```
-
-4. Open [http://localhost:3000] in your browser.
+```sh
+npm start
+```
 
 ### Backend API
 
